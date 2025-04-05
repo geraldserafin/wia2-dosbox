@@ -13,7 +13,7 @@
           program = "${pkgs.writeShellScript "dosbox-run" ''
             DIR="''${1:-$(pwd)}"
 
-            ${pkgs.dosbox}/bin/dosbox \
+            ${pkgs.dosbox-x}/bin/dosbox-x \
               -conf <(echo "
                 ${builtins.readFile ./dosbox.conf}
                 mount d ${./dosfiles}
