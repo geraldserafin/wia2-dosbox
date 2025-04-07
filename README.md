@@ -6,3 +6,5 @@ Aby korzystać z aplikacji należy najpierw zainstalować manager pakietów nix:
 
 ## Uruchamianie
 `nix run github:geraldserafin/wia2-dosbox --extra-experimental-features "flakes nix-command"`
+
+Na koncu komendy - jako argument - można podać scieżkę która ma zostać zmountowana jako dysk C w dosbox (zawarte w niej pliki będą dostępne w emulatorze). Jeśli scieżka nie zostanie podana to zmountowana zostanie aktualna scieżka robocza (PWD, ta w której wywołana jest komenda)
